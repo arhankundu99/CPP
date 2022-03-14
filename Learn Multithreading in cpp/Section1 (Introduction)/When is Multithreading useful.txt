@@ -1,0 +1,24 @@
+
+When is multithreading useful?
+
+Multithreading gives us asynchronous execution
+This is where functions are not synchronized with each other.
+THey can run at the same time.
+
+1) When we are waiting for something external and we want to execute some code in the mean time
+
+Example: pinging remote servers to get data collectively instead of getting data from pinging the servers one by one
+        (assuming the data from the servers are independent from each other)
+
+Example: drawing graphics while taking user input
+
+2) Distributing processing across multiple cores
+Eg: My CPU has 8 cores, So we can distribute the work in 8 cores which runs at the same time so that processing can be faster
+
+Example: calculating pi to lots of digits
+
+3) What is time-slicing?
+
+Time-slice multithreading is the convectional multithreading where CPU creates an illusion of executing more than once program at a time 
+but the CPU can execute only one of these programs at a time. 
+The OS maintains the illusion of concurrency by rapidly switching between running programs at a fixed interval, called a time slice.
