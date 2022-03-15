@@ -64,6 +64,7 @@ The OS maintains the illusion of concurrency by rapidly switching between runnin
 9. **deadlock**: deadlock occurs when two or more threads wants each others' mutexes before unlocking their own mutex. As a result neither of the threads proceed.
 
 10. **Returning values from threads**: 
+   
    a) **promise**: ```std::promise``` is an object which is used to store the result from an asynchronous producer code which can retrieved by a ```std::future``` object in the consumer code.
     
    b) **packaged_task**: ```std::packaged_task``` is an object which has the same functionality as a ```std::promise``` object but we can write   cleaner code with package_task.
