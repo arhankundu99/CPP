@@ -13,7 +13,10 @@ What this diagram tells is that text segment addresses < data segment addresses 
   int x = 5;
   int y = 10;
   
-  // this means that address of y < address of x. And as the memory in stack is allcated in contiguous locations, address of y = address of x - 1. So what happens is that after x is allocated, for allocating y, the stack pointer is moved by 4 bytes backwards and the address of the stack pointer is returned.
+  // this means that address of y < address of x. 
+  // And as the memory in stack is allcated in contiguous locations, address of y = address of x - 1. So what happens is
+  // that after x is allocated, for allocating y, 
+  // the stack pointer is moved by 4 bytes backwards and the address of the stack pointer is returned.
 }
 ```
 
