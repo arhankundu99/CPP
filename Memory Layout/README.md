@@ -97,3 +97,41 @@ Let's say, we have 32 bit system and also 2 mb stack size by default. That means
 to spawn a maximum of 2048 threads. And if we increase the stack size, the number of threads that we can spawn would become less.
 
 Refer: https://stackoverflow.com/questions/10482974/why-is-stack-memory-size-so-limited
+
+### Heap Memory Fragmentation 
+Imagine that you have a "large" (32 bytes) expanse of free memory:
+```
+----------------------------------
+|                                |
+----------------------------------
+```
+Now, allocate some of it (5 allocations):
+```
+----------------------------------
+|aaaabbccccccddeeee              |
+----------------------------------
+```
+Now, free the first four allocations but not the fifth:
+```
+----------------------------------
+|              eeee              |
+----------------------------------
+```
+Now try to allocate 16 bytes. Even though we have nearly double memory free, we cannot allocate 16 bytes because there is no contiguous block with 16 bytes size.
+
+#### Why is heap fragmentation bad?
+Consequence 1: Unreliable program
+By definition, a high fragmentation level means you have a lot of free memory, but you can only allocate small blocks. If your program needs a bigger block, it will not get it and will stop working.
+
+Consequence 2: Degraded performance
+A highly fragmented heap is slower because the memory allocator takes more time to find the best hole, the so-called “best-fit.”
+
+#### Heap fragmentation is solved using Virtual memory
+The programs running on our computers use Virtual Memory. The value of the pointer is not the physical location in the RAM; instead, the CPU translates the address on the fly. This decoupling allows defragmenting the RAM without moving anything but requires dedicated hardware that we do not have on our microcontrollers.
+
+Heap fragmentation can be reduced by avoid allocation of memory on heap unless required.
+
+
+
+
+
