@@ -1,5 +1,25 @@
 # Memory Layout of C/C++ program
+Refer: https://www.scaler.com/topics/c/memory-layout-in-c/
+
 After compiling a C program, a binary executable file(.exe) is created, and when we execute the program, this binary file loads into RAM in an organized manner. After being loaded into the RAM, memory layout in C Program has six components which are <b>text segment, initialized data segment, uninitialized data segment, command-line arguments, stack, and heap</b>. Each of these six different segments stores different parts of code and have their own read, write permissions. If a program tries to access the value stored in any segment differently than it is supposed to, it results in a segmentation fault error.
+
+<img src = "https://raw.githubusercontent.com/arhankundu99/CPP/main/Memory%20Layout/Memory%20Layout.png">
+
+What this diagram tells is that text segment addresses < data segment addresses < heap address < stack address. And also we can see in the diagram that stack grows backward and heap grows upward.
+
+### Stack grows backward
+```cpp
+{
+  int x = 5;
+  int y = 10;
+  
+  // this means that address of y < address of x. And as the memory in stack is allcated in contiguous locations, address of y = address of x - 1. So what happens is that after x is allocated, for allocating y, the stack pointer is moved by 4 bytes backwards and the address of the stack pointer is returned.
+}
+```
+
+### Heap grows upward.
+What this means is that unlike stack memory allocation, for the above example (Assume x and y are allocated on heap), address of y > address of x.
+
 
 # Text Segment
 After we compile the program, a binary file generates, which is used to execute our program by loading it into RAM. This binary file contains instructions, and these instructions get stored in the text segment of the memory.
@@ -8,7 +28,7 @@ Text segment has read-only permission that prevents the program from accidental 
 <b>Text Segment is basically the machine code of the program.</b>
 
 # Initialised and Uninitialised Data segment
-All the global, static variables fall in this memory layout.
+All the global, static variables fall in this memory layout. Intialised variables fall in initialised data segment and uninitialised data fall in unintialised data segment.
 
 # Stack and Heap
 
@@ -37,9 +57,9 @@ int main()
 
 ```
 In stack, memory is allocated in contiguous locations <b>unlike the memory allocation on heap which happens on random addresses</b>. In the above example, the address of value and arr is in <b>contiguous location</b>.
-When we allocate an integer on stack, we <b>move the stack pointer by 4 bytes backwards (Depends on the implementation) and return the stack pointer.</b>.
+When we allocate an integer on stack, we <b>move the stack pointer by 4 bytes backwards and return the stack pointer.</b>.
 
-In the below code, as px and py are allocated contiguous locations, using py, we are able to manipulate the data in px address.
+In the below code, as px and py are allocated contiguous locations, using py, we are able to manipulate the data in px address (Here address of py is more than px which is contradictory to the first diagram, but it depends on the implementation of the compiler).
 ```cpp
 #include <iostream>
 
