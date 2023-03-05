@@ -99,6 +99,8 @@ to spawn a maximum of 2048 threads. And if we increase the stack size, the numbe
 Refer: https://stackoverflow.com/questions/10482974/why-is-stack-memory-size-so-limited
 
 ### Heap Memory Fragmentation 
+Reference: https://cpp4arduino.com/2018/11/06/what-is-heap-fragmentation.html
+
 Imagine that you have a "large" (32 bytes) expanse of free memory:
 ```
 ----------------------------------
