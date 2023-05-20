@@ -1,0 +1,456 @@
+{
+  "id": "0x4bb998",
+  "kind": "TranslationUnitDecl",
+  "loc": {},
+  "range": {
+    "begin": {},
+    "end": {}
+  },
+  "inner": [
+    {
+      "id": "0x4bc270",
+      "kind": "TypedefDecl",
+      "loc": {},
+      "range": {
+        "begin": {},
+        "end": {}
+      },
+      "isImplicit": true,
+      "name": "__int128_t",
+      "type": {
+        "qualType": "__int128"
+      },
+      "inner": [
+        {
+          "id": "0x4bbf30",
+          "kind": "BuiltinType",
+          "type": {
+            "qualType": "__int128"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x4bc2e0",
+      "kind": "TypedefDecl",
+      "loc": {},
+      "range": {
+        "begin": {},
+        "end": {}
+      },
+      "isImplicit": true,
+      "name": "__uint128_t",
+      "type": {
+        "qualType": "unsigned __int128"
+      },
+      "inner": [
+        {
+          "id": "0x4bbf50",
+          "kind": "BuiltinType",
+          "type": {
+            "qualType": "unsigned __int128"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x4bc658",
+      "kind": "TypedefDecl",
+      "loc": {},
+      "range": {
+        "begin": {},
+        "end": {}
+      },
+      "isImplicit": true,
+      "name": "__NSConstantString",
+      "type": {
+        "qualType": "__NSConstantString_tag"
+      },
+      "inner": [
+        {
+          "id": "0x4bc3d0",
+          "kind": "RecordType",
+          "type": {
+            "qualType": "__NSConstantString_tag"
+          },
+          "decl": {
+            "id": "0x4bc338",
+            "kind": "CXXRecordDecl",
+            "name": "__NSConstantString_tag"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x4bc6f0",
+      "kind": "TypedefDecl",
+      "loc": {},
+      "range": {
+        "begin": {},
+        "end": {}
+      },
+      "isImplicit": true,
+      "name": "__builtin_ms_va_list",
+      "type": {
+        "qualType": "char *"
+      },
+      "inner": [
+        {
+          "id": "0x4bc6b0",
+          "kind": "PointerType",
+          "type": {
+            "qualType": "char *"
+          },
+          "inner": [
+            {
+              "id": "0x4bba30",
+              "kind": "BuiltinType",
+              "type": {
+                "qualType": "char"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x4f93e8",
+      "kind": "TypedefDecl",
+      "loc": {},
+      "range": {
+        "begin": {},
+        "end": {}
+      },
+      "isImplicit": true,
+      "name": "__builtin_va_list",
+      "type": {
+        "qualType": "__va_list_tag [1]"
+      },
+      "inner": [
+        {
+          "id": "0x4f9390",
+          "kind": "ConstantArrayType",
+          "type": {
+            "qualType": "__va_list_tag [1]"
+          },
+          "size": 1,
+          "inner": [
+            {
+              "id": "0x4bc7e0",
+              "kind": "RecordType",
+              "type": {
+                "qualType": "__va_list_tag"
+              },
+              "decl": {
+                "id": "0x4bc748",
+                "kind": "CXXRecordDecl",
+                "name": "__va_list_tag"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x4f9440",
+      "kind": "CXXRecordDecl",
+      "loc": {
+        "offset": 7,
+        "file": "structures.hpp",
+        "line": 1,
+        "col": 8,
+        "tokLen": 7
+      },
+      "range": {
+        "begin": {
+          "offset": 0,
+          "col": 1,
+          "tokLen": 6
+        },
+        "end": {
+          "offset": 41,
+          "line": 4,
+          "col": 1,
+          "tokLen": 1
+        }
+      },
+      "name": "struct1",
+      "tagUsed": "struct",
+      "completeDefinition": true,
+      "definitionData": {
+        "canPassInRegisters": true,
+        "copyAssign": {
+          "hasConstParam": true,
+          "implicitHasConstParam": true,
+          "needsImplicit": true,
+          "trivial": true
+        },
+        "copyCtor": {
+          "hasConstParam": true,
+          "implicitHasConstParam": true,
+          "needsImplicit": true,
+          "simple": true,
+          "trivial": true
+        },
+        "defaultCtor": {
+          "exists": true,
+          "needsImplicit": true,
+          "trivial": true
+        },
+        "dtor": {
+          "irrelevant": true,
+          "needsImplicit": true,
+          "simple": true,
+          "trivial": true
+        },
+        "isAggregate": true,
+        "isLiteral": true,
+        "isPOD": true,
+        "isStandardLayout": true,
+        "isTrivial": true,
+        "isTriviallyCopyable": true,
+        "moveAssign": {
+          "exists": true,
+          "needsImplicit": true,
+          "simple": true,
+          "trivial": true
+        },
+        "moveCtor": {
+          "exists": true,
+          "needsImplicit": true,
+          "simple": true,
+          "trivial": true
+        }
+      },
+      "inner": [
+        {
+          "id": "0x4f9558",
+          "kind": "CXXRecordDecl",
+          "loc": {
+            "offset": 7,
+            "line": 1,
+            "col": 8,
+            "tokLen": 7
+          },
+          "range": {
+            "begin": {
+              "offset": 0,
+              "col": 1,
+              "tokLen": 6
+            },
+            "end": {
+              "offset": 7,
+              "col": 8,
+              "tokLen": 7
+            }
+          },
+          "isImplicit": true,
+          "name": "struct1",
+          "tagUsed": "struct"
+        },
+        {
+          "id": "0x4f9600",
+          "kind": "FieldDecl",
+          "loc": {
+            "offset": 25,
+            "line": 2,
+            "col": 9,
+            "tokLen": 1
+          },
+          "range": {
+            "begin": {
+              "offset": 21,
+              "col": 5,
+              "tokLen": 3
+            },
+            "end": {
+              "offset": 25,
+              "col": 9,
+              "tokLen": 1
+            }
+          },
+          "name": "a",
+          "type": {
+            "qualType": "int"
+          }
+        },
+        {
+          "id": "0x4f9668",
+          "kind": "FieldDecl",
+          "loc": {
+            "offset": 37,
+            "line": 3,
+            "col": 9,
+            "tokLen": 1
+          },
+          "range": {
+            "begin": {
+              "offset": 33,
+              "col": 5,
+              "tokLen": 3
+            },
+            "end": {
+              "offset": 37,
+              "col": 9,
+              "tokLen": 1
+            }
+          },
+          "name": "b",
+          "type": {
+            "qualType": "int"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x4f96d0",
+      "kind": "CXXRecordDecl",
+      "loc": {
+        "offset": 54,
+        "line": 6,
+        "col": 8,
+        "tokLen": 7
+      },
+      "range": {
+        "begin": {
+          "offset": 47,
+          "col": 1,
+          "tokLen": 6
+        },
+        "end": {
+          "offset": 88,
+          "line": 9,
+          "col": 1,
+          "tokLen": 1
+        }
+      },
+      "name": "struct2",
+      "tagUsed": "struct",
+      "completeDefinition": true,
+      "definitionData": {
+        "canPassInRegisters": true,
+        "copyAssign": {
+          "hasConstParam": true,
+          "implicitHasConstParam": true,
+          "needsImplicit": true,
+          "trivial": true
+        },
+        "copyCtor": {
+          "hasConstParam": true,
+          "implicitHasConstParam": true,
+          "needsImplicit": true,
+          "simple": true,
+          "trivial": true
+        },
+        "defaultCtor": {
+          "exists": true,
+          "needsImplicit": true,
+          "trivial": true
+        },
+        "dtor": {
+          "irrelevant": true,
+          "needsImplicit": true,
+          "simple": true,
+          "trivial": true
+        },
+        "isAggregate": true,
+        "isLiteral": true,
+        "isPOD": true,
+        "isStandardLayout": true,
+        "isTrivial": true,
+        "isTriviallyCopyable": true,
+        "moveAssign": {
+          "exists": true,
+          "needsImplicit": true,
+          "simple": true,
+          "trivial": true
+        },
+        "moveCtor": {
+          "exists": true,
+          "needsImplicit": true,
+          "simple": true,
+          "trivial": true
+        }
+      },
+      "inner": [
+        {
+          "id": "0x4f97e8",
+          "kind": "CXXRecordDecl",
+          "loc": {
+            "offset": 54,
+            "line": 6,
+            "col": 8,
+            "tokLen": 7
+          },
+          "range": {
+            "begin": {
+              "offset": 47,
+              "col": 1,
+              "tokLen": 6
+            },
+            "end": {
+              "offset": 54,
+              "col": 8,
+              "tokLen": 7
+            }
+          },
+          "isImplicit": true,
+          "name": "struct2",
+          "tagUsed": "struct"
+        },
+        {
+          "id": "0x4f9890",
+          "kind": "FieldDecl",
+          "loc": {
+            "offset": 72,
+            "line": 7,
+            "col": 9,
+            "tokLen": 1
+          },
+          "range": {
+            "begin": {
+              "offset": 68,
+              "col": 5,
+              "tokLen": 3
+            },
+            "end": {
+              "offset": 72,
+              "col": 9,
+              "tokLen": 1
+            }
+          },
+          "name": "c",
+          "type": {
+            "qualType": "int"
+          }
+        },
+        {
+          "id": "0x4f98f8",
+          "kind": "FieldDecl",
+          "loc": {
+            "offset": 84,
+            "line": 8,
+            "col": 9,
+            "tokLen": 1
+          },
+          "range": {
+            "begin": {
+              "offset": 80,
+              "col": 5,
+              "tokLen": 3
+            },
+            "end": {
+              "offset": 84,
+              "col": 9,
+              "tokLen": 1
+            }
+          },
+          "name": "d",
+          "type": {
+            "qualType": "int"
+          }
+        }
+      ]
+    }
+  ]
+}
